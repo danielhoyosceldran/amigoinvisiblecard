@@ -251,7 +251,7 @@ let ed = null; // { cell, wasFilled, results, status, query, busy:Set }
 
 function openEditor(id) {
   const cell = CELLS.find((c) => c.id === id);
-  ed = { cell, wasFilled: state.cells[id].length > 0, results: [], status: 'idle', query: '', busy: new Set() };
+  ed = { cell, wasFilled: state.cells[id].length > 0, results: [], pool: [], unseen: [], status: 'idle', query: '', busy: new Set() };
   editor.classList.toggle('is-color', cell.kind === 'color');
   editor.innerHTML = cell.kind === 'color' ? colorEditorHTML() : photoEditorHTML();
   renderPicked();
@@ -451,11 +451,31 @@ function renderResults() {
         </button></li>`;
       })
       .join('')}</ul>
+    ${ed.pool.length > PAGE ? `<button type="button" class="btn btn-line reroll" data-reroll>${icon('reroll')}Otras fotos</button>` : ''}
     <p class="results-credit">${esc(providerLabel)}</p>`;
 
   box.querySelectorAll('.hit img').forEach((img) => {
     img.addEventListener('error', () => img.closest('li')?.remove(), { once: true });
   });
+}
+
+const PAGE = 12;
+
+// Saca PAGE fotos al azar del conjunto buscado, sin repetir hasta agotarlo.
+function rollResults() {
+  const shuffle = (a) => {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  };
+  if (ed.unseen.length < Math.min(PAGE, ed.pool.length)) {
+    const left = new Set(ed.unseen);
+    ed.unseen = ed.unseen.concat(shuffle(ed.pool.filter((h) => !left.has(h))));
+  }
+  ed.results = ed.unseen.splice(0, PAGE);
+  ed.busy.clear();
 }
 
 async function runSearch(query) {
@@ -473,7 +493,9 @@ async function runSearch(query) {
   try {
     const hits = await searchImages(query);
     if (!ed || ed.token !== token) return;
-    ed.results = hits;
+    ed.pool = hits;
+    ed.unseen = [];
+    rollResults();
     ed.status = hits.length ? 'done' : 'empty';
   } catch {
     if (!ed || ed.token !== token) return;
@@ -542,6 +564,12 @@ editor.addEventListener('click', async (e) => {
   if (idea) {
     $('#q', editor).value = idea.dataset.idea;
     runSearch(idea.dataset.idea);
+    $('#results', editor).scrollIntoView({ block: 'start', behavior: 'smooth' });
+    return;
+  }
+  if (e.target.closest('[data-reroll]')) {
+    rollResults();
+    renderResults();
     $('#results', editor).scrollIntoView({ block: 'start', behavior: 'smooth' });
     return;
   }

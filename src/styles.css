@@ -1091,6 +1091,15 @@ dialog::backdrop {
   }
 }
 
+.reroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 12px;
+}
+
 .hits {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

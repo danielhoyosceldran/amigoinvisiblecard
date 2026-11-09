@@ -10,7 +10,8 @@ const paths = {
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   plus: '<path d="M12 5v14M5 12h14"/>',
   palette: '<path d="M12 4a8 8 0 1 0 0 16c1.2 0 1.8-.8 1.8-1.7 0-1.1-.9-1.4-.9-2.4 0-.9.7-1.4 1.6-1.4H17a3 3 0 0 0 3-3C20 7.3 16.4 4 12 4z"/><circle cx="8" cy="11" r="1"/><circle cx="11" cy="7.8" r="1"/><circle cx="15.2" cy="8.4" r="1"/>',
-  edit: '<path d="M5 19h4L19 9l-4-4L5 15z"/><path d="m13 7 4 4"/>',
+  reroll: '<path d="M20 11a8 8 0 0 0-14.5-4.5L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.5 4.5L20 16"/><path d="M20 20v-4h-4"/>',
+  edit:'<path d="M5 19h4L19 9l-4-4L5 15z"/><path d="m13 7 4 4"/>',
 };
 
 export function icon(name, cls = 'icon') {
