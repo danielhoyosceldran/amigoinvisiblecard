@@ -158,7 +158,7 @@ components:
 
 **Creative North Star: "The Nochebuena Bingo Card"**
 
-The whole product is one printed bingo card on a cobalt table. The shell is solid cobalt ink; the card is white paper printed in that same ink plus black, with a perforated top edge as if torn from the pad. Nine ruled squares carry huge extra-condensed numerals; finishing a square lands a fluorescent magenta dauber dot over its number, and when the card is full a marigold «¡BINGO!» call takes the top of the screen. Everything a person reads in sentences is set in Atkinson Hyperlegible Next, large and bold, because the people filling the card include older relatives on phones with big system text.
+The whole product is one printed bingo card on a cobalt table. The shell is solid cobalt ink; the card is white paper printed in that same ink plus black, with a perforated top edge as if torn from the pad. Nine ruled squares carry huge extra-condensed numerals; finishing a square lands a fluorescent magenta dauber dot over its number, and when the card is full a marigold «¡QUINTO!» call takes the top of the screen. Everything a person reads in sentences is set in Atkinson Hyperlegible Next, large and bold, because the people filling the card include older relatives on phones with big system text.
 
 Density is low and the hierarchy is blunt: one cobalt band (title, year, «4 de 9» count), one next-step sign («Ahora: 5 · Pequeño lujo diario»), one card. Editing a square takes the full screen and does one job. The same world is redrawn on canvas for the shared image (1080 × 1560): cobalt ground, «EL CARTÓN DE» plus the name in condensed capitals, the white perforated card with a double outer rule, and a footer line «Amigo invisible · Navidad 2026». That image is the product's deliverable and belongs to this system.
 
@@ -183,7 +183,7 @@ A two-ink print palette (cobalt + black on white) with exactly two fluorescent i
 - **Dauber Magenta** (`dauber`): the completion mark only. The dot over a finished square's number (radial fill at 78 to 98% opacity, `mix-blend-mode: multiply`), the dashed ring that slowly turns around the next square and the next-step number, the selected-image ring and check badge in search results, the text caret.
 
 ### Tertiary
-- **Marigold Call** (`call`): the call to action. The «¡BINGO! Crear mi imagen» button, the primary button in the share sheet, text selection. **Bright Marigold** (`call-bright`) is its hover.
+- **Marigold Call** (`call`): the call to action. The «¡QUINTO! Crear mi imagen» button, the primary button in the share sheet, text selection. **Bright Marigold** (`call-bright`) is its hover.
 
 ### Neutral
 - **Card Paper** (`paper`): the card, the editor and sheet surfaces, slot and chip fills. Pure white.
@@ -207,15 +207,15 @@ A two-ink print palette (cobalt + black on white) with exactly two fluorescent i
 **Character:** A bingo-hall numeral press paired with a legibility face built for low vision. Archivo is always 900, uppercase, `font-stretch: 62%`; Atkinson does all reading.
 
 ### Hierarchy
-- **Display** (Archivo 900, 2.75rem mobile, 3.5rem from 48rem, 5rem from 64rem, line-height 0.86, uppercase): the «AMIGO INVISIBLE» band title. The same face sizes the count numeral (3rem) and «¡BINGO!» (2.75rem).
+- **Display** (Archivo 900, 2.75rem mobile, 3.5rem from 48rem, 5rem from 64rem, line-height 0.86, uppercase): the «AMIGO INVISIBLE» band title. The same face sizes the count numeral (3rem) and «¡QUINTO!» (2.75rem).
 - **Numeral** (Archivo 900, clamp(3.5rem, 18vw, 6.5rem), line-height 1): the printed square numbers on empty squares. In a filled square the number scales with its quadrant (40cqi). The editor's boxed number is 3.5rem.
-- **Headline** (Archivo 900, 2rem editor / 2.25rem sheet, line-height 0.95, uppercase): editor square titles and sheet titles such as «¡BINGO, MARI CARMEN!». «CARTÓN DE» in the card head is 1.375rem with 0.02em tracking.
-- **Title** (Atkinson 700, 1.25rem, 1.2): the next-step square name, big buttons, the «¡BINGO!» subline.
+- **Headline** (Archivo 900, 2rem editor / 2.25rem sheet, line-height 0.95, uppercase): editor square titles and sheet titles such as «¡QUINTO, MARI CARMEN!». «CARTÓN DE» in the card head is 1.375rem with 0.02em tracking.
+- **Title** (Atkinson 700, 1.25rem, 1.2): the next-step square name, big buttons, the «¡QUINTO!» subline.
 - **Body** (Atkinson 400, 1.125rem, 1.45, tabular numerals): all running text; paragraphs cap at 52 to 60ch.
 - **Label** (Atkinson 700, 1rem, 1.15, balanced wrap): square labels under the numbers, chips, smaller headings. Nothing in the UI goes below 0.875rem (search credit only).
 
 ### Named Rules
-**The Numbers Are Printed Rule.** Archivo appears only as printed card matter: numbers, the title, headings, «CARTÓN DE», «¡BINGO!», the «NO» stamp. A sentence is never set in Archivo.
+**The Numbers Are Printed Rule.** Archivo appears only as printed card matter: numbers, the title, headings, «CARTÓN DE», «¡QUINTO!», the «NO» stamp. A sentence is never set in Archivo.
 
 **The Big Text Rule.** Body is 1.125rem and controls are bold. Never shrink sentences to fit; let labels wrap (`text-wrap: balance`, hyphenation on).
 
@@ -237,7 +237,7 @@ Depth is physical and singular: a paper card lying on a cobalt table. Only objec
 
 ### Shadow Vocabulary
 - **Card on table** (`filter: drop-shadow(0 14px 16px rgb(6 12 48 / 0.45)) drop-shadow(0 2px 3px rgb(6 12 48 / 0.3))`): the card itself (a filter, so it follows the perforated mask).
-- **Sign on table** (`box-shadow: 0 16px 30px -12px rgb(6 12 48 / 0.6), 0 3px 6px rgb(6 12 48 / 0.28)`): the next-step sign and the «¡BINGO!» call.
+- **Sign on table** (`box-shadow: 0 16px 30px -12px rgb(6 12 48 / 0.6), 0 3px 6px rgb(6 12 48 / 0.28)`): the next-step sign and the «¡QUINTO!» call.
 - **Preview** (`box-shadow: 0 12px 24px -10px rgb(6 12 48 / 0.5)`): the shared-image preview in the share sheet.
 - **Toast** (`box-shadow: 0 10px 24px -8px rgb(0 0 0 / 0.5)`): the black notice at the bottom.
 - **Print hairline** (`box-shadow: inset 0 0 0 1px rgb(34 52 168 / 0.18)`): photo quadrants; 0.3 alpha around colour chips.
@@ -288,8 +288,8 @@ Empty: numeral centred in a square face, label below; the next square wears a da
 ### Dauber and Stamp (signature)
 The dauber is magenta multiplied over ink so the number stays readable through it. The «NO» stamp is black condensed «NO» in a 0.06em rounded frame at 85% opacity, multiply, rotated -14°, centred over the photo quadrants without covering the number: it cancels the photos, it does not hide them.
 
-### ¡BINGO! Call (signature)
-When 9/9, a marigold block replaces the next-step sign: «¡BINGO!» in condensed 900 caps beside «Crear mi imagen». It arrives with a 700ms drop-and-settle.
+### ¡QUINTO! Call (signature)
+When 9/9, a marigold block replaces the next-step sign: «¡QUINTO!» in condensed 900 caps beside «Crear mi imagen». It arrives with a 700ms drop-and-settle.
 
 ### Shared Image
 The canvas redraw of the card: cobalt ground, «EL CARTÓN DE» in soft ink and the name in white condensed caps (132px, shrinking to fit), the perforated white card with a cobalt grid and double outer rule, daubers and stamp drawn with multiply, colour names in condensed caps chosen black or white by luminance, a soft-ink footer.

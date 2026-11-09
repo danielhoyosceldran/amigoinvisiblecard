@@ -160,8 +160,8 @@ function renderBoard({ stamp } = {}) {
 
   const n = filledCount();
   how.textContent = next
-    ? 'Toca cada casilla y elige hasta tres fotos de lo que te gusta. Cuando estén las nueve, aparecerá el botón ¡Bingo! para crear tu imagen y mandarla a la familia.'
-    : '¡Cartón completo! Toca ¡Bingo! para crear tu imagen y mandarla a la familia. Puedes seguir cambiando casillas cuando quieras.';
+    ? 'Toca cada casilla y elige hasta tres fotos de lo que te gusta. Cuando estén las nueve, aparecerá el botón ¡Quinto! para crear tu imagen y mandarla a la familia.'
+    : '¡Cartón completo! Toca ¡Quinto! para crear tu imagen y mandarla a la familia. Puedes seguir cambiando casillas cuando quieras.';
   count.innerHTML = `<b>${n}</b> de 9`;
   count.setAttribute('aria-label', `${n} de 9 casillas completas`);
 
@@ -178,7 +178,7 @@ function renderBoard({ stamp } = {}) {
   } else {
     call.dataset.state = 'bingo';
     call.innerHTML = `<button type="button" class="bingo ${wasBingo ? '' : 'is-arriving'}" id="bingo">
-      <span class="bingo-word">¡Bingo!</span>
+      <span class="bingo-word">¡Quinto!</span>
       <span class="bingo-sub">Crear mi imagen</span>
     </button>`;
   }
@@ -718,7 +718,7 @@ async function buildImage() {
     const canShare = !!navigator.canShare?.({ files: [shareFile] });
     share.innerHTML = `
       <div class="sd">
-        <h2 class="sd-title" id="share-title">¡Bingo, ${esc(state.name.trim())}!</h2>
+        <h2 class="sd-title" id="share-title">¡Quinto, ${esc(state.name.trim())}!</h2>
         <p class="sd-text">Esta es tu imagen. Mándala al grupo de la familia para que quien te toque sepa qué regalarte.</p>
         <img class="sd-preview" src="${shareUrl}" alt="Tu cartón del amigo invisible con las nueve casillas" />
         <div class="sd-actions">
