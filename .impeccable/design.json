@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T17:19:30.802Z",
+  "title": "Design System: Cartón del amigo invisible",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Cobalt Bingo Ink",
+        "canonical": "oklch(39.8% 0.185 268.7)",
+        "tonalRamp": [
+          "oklch(15% 0.185 268.7)",
+          "oklch(26% 0.185 268.7)",
+          "oklch(37% 0.185 268.7)",
+          "oklch(48% 0.185 268.7)",
+          "oklch(59% 0.185 268.7)",
+          "oklch(70% 0.185 268.7)",
+          "oklch(82% 0.185 268.7)",
+          "oklch(95% 0.185 268.7)"
+        ]
+      },
+      "ink-deep": {
+        "role": "primary",
+        "displayName": "Deep Cobalt",
+        "canonical": "oklch(31.7% 0.145 269.0)",
+        "tonalRamp": [
+          "oklch(15% 0.145 269.0)",
+          "oklch(26% 0.145 269.0)",
+          "oklch(37% 0.145 269.0)",
+          "oklch(48% 0.145 269.0)",
+          "oklch(59% 0.145 269.0)",
+          "oklch(70% 0.145 269.0)",
+          "oklch(82% 0.145 269.0)",
+          "oklch(95% 0.145 269.0)"
+        ]
+      },
+      "ink-tint": {
+        "role": "neutral",
+        "displayName": "Ink Tint",
+        "canonical": "oklch(94.2% 0.020 277.0)",
+        "tonalRamp": [
+          "oklch(15% 0.020 277.0)",
+          "oklch(26% 0.020 277.0)",
+          "oklch(37% 0.020 277.0)",
+          "oklch(48% 0.020 277.0)",
+          "oklch(59% 0.020 277.0)",
+          "oklch(70% 0.020 277.0)",
+          "oklch(82% 0.020 277.0)",
+          "oklch(95% 0.020 277.0)"
+        ]
+      },
+      "ink-soft-on-paper": {
+        "role": "neutral",
+        "displayName": "Soft Ink on Paper",
+        "canonical": "oklch(49.9% 0.152 273.8)",
+        "tonalRamp": [
+          "oklch(15% 0.152 273.8)",
+          "oklch(26% 0.152 273.8)",
+          "oklch(37% 0.152 273.8)",
+          "oklch(48% 0.152 273.8)",
+          "oklch(59% 0.152 273.8)",
+          "oklch(70% 0.152 273.8)",
+          "oklch(82% 0.152 273.8)",
+          "oklch(95% 0.152 273.8)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Card Paper",
+        "canonical": "oklch(100.0% 0.000 0)",
+        "tonalRamp": [
+          "oklch(15% 0.000 0)",
+          "oklch(26% 0.000 0)",
+          "oklch(37% 0.000 0)",
+          "oklch(48% 0.000 0)",
+          "oklch(59% 0.000 0)",
+          "oklch(70% 0.000 0)",
+          "oklch(82% 0.000 0)",
+          "oklch(95% 0.000 0)"
+        ]
+      },
+      "black": {
+        "role": "neutral",
+        "displayName": "Stamp Black",
+        "canonical": "oklch(19.1% 0.000 0)",
+        "tonalRamp": [
+          "oklch(15% 0.000 0)",
+          "oklch(26% 0.000 0)",
+          "oklch(37% 0.000 0)",
+          "oklch(48% 0.000 0)",
+          "oklch(59% 0.000 0)",
+          "oklch(70% 0.000 0)",
+          "oklch(82% 0.000 0)",
+          "oklch(95% 0.000 0)"
+        ]
+      },
+      "on-ink": {
+        "role": "neutral",
+        "displayName": "On-Ink White",
+        "canonical": "oklch(100.0% 0.000 0)",
+        "tonalRamp": [
+          "oklch(15% 0.000 0)",
+          "oklch(26% 0.000 0)",
+          "oklch(37% 0.000 0)",
+          "oklch(48% 0.000 0)",
+          "oklch(59% 0.000 0)",
+          "oklch(70% 0.000 0)",
+          "oklch(82% 0.000 0)",
+          "oklch(95% 0.000 0)"
+        ]
+      },
+      "on-ink-soft": {
+        "role": "neutral",
+        "displayName": "On-Ink Soft",
+        "canonical": "oklch(86.4% 0.052 276.8)",
+        "tonalRamp": [
+          "oklch(15% 0.052 276.8)",
+          "oklch(26% 0.052 276.8)",
+          "oklch(37% 0.052 276.8)",
+          "oklch(48% 0.052 276.8)",
+          "oklch(59% 0.052 276.8)",
+          "oklch(70% 0.052 276.8)",
+          "oklch(82% 0.052 276.8)",
+          "oklch(95% 0.052 276.8)"
+        ]
+      },
+      "dauber": {
+        "role": "secondary",
+        "displayName": "Dauber Magenta",
+        "canonical": "oklch(66.2% 0.244 1.7)",
+        "tonalRamp": [
+          "oklch(15% 0.200 1.7)",
+          "oklch(26% 0.200 1.7)",
+          "oklch(37% 0.200 1.7)",
+          "oklch(48% 0.200 1.7)",
+          "oklch(59% 0.200 1.7)",
+          "oklch(70% 0.200 1.7)",
+          "oklch(82% 0.200 1.7)",
+          "oklch(95% 0.200 1.7)"
+        ]
+      },
+      "call": {
+        "role": "tertiary",
+        "displayName": "Marigold Call",
+        "canonical": "oklch(87.7% 0.174 92.5)",
+        "tonalRamp": [
+          "oklch(15% 0.174 92.5)",
+          "oklch(26% 0.174 92.5)",
+          "oklch(37% 0.174 92.5)",
+          "oklch(48% 0.174 92.5)",
+          "oklch(59% 0.174 92.5)",
+          "oklch(70% 0.174 92.5)",
+          "oklch(82% 0.174 92.5)",
+          "oklch(95% 0.174 92.5)"
+        ]
+      },
+      "call-bright": {
+        "role": "tertiary",
+        "displayName": "Bright Marigold",
+        "canonical": "oklch(90.7% 0.162 97.0)",
+        "tonalRamp": [
+          "oklch(15% 0.162 97.0)",
+          "oklch(26% 0.162 97.0)",
+          "oklch(37% 0.162 97.0)",
+          "oklch(48% 0.162 97.0)",
+          "oklch(59% 0.162 97.0)",
+          "oklch(70% 0.162 97.0)",
+          "oklch(82% 0.162 97.0)",
+          "oklch(95% 0.162 97.0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Band title «AMIGO INVISIBLE»: 2.75rem, 3.5rem from 48rem, 5rem from 64rem. Same face for the count numeral and «¡BINGO!»."
+      },
+      "numeral": {
+        "displayName": "Printed Numeral",
+        "purpose": "Square numbers on the card; scales with its quadrant (40cqi) once the square is filled."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Editor square titles (2rem) and sheet titles (2.25rem), uppercase condensed."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Next-step square name, big buttons, the ¡BINGO! subline."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text, tabular numerals, 52-60ch measure."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Square labels, chips, small headings; bold with balanced wrap."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-on-table",
+        "value": "drop-shadow(0 14px 16px rgb(6 12 48 / 0.45)) drop-shadow(0 2px 3px rgb(6 12 48 / 0.3))",
+        "purpose": "Filter on the perforated card so the shadow follows the die-cut edge."
+      },
+      {
+        "name": "sign-on-table",
+        "value": "0 16px 30px -12px rgb(6 12 48 / 0.6), 0 3px 6px rgb(6 12 48 / 0.28)",
+        "purpose": "Next-step sign and ¡BINGO! call on the cobalt band."
+      },
+      {
+        "name": "preview",
+        "value": "0 12px 24px -10px rgb(6 12 48 / 0.5)",
+        "purpose": "Shared-image preview in the share sheet."
+      },
+      {
+        "name": "toast",
+        "value": "0 10px 24px -8px rgb(0 0 0 / 0.5)",
+        "purpose": "Bottom notice."
+      },
+      {
+        "name": "print-hairline",
+        "value": "inset 0 0 0 1px rgb(34 52 168 / 0.18)",
+        "purpose": "Photo quadrants on paper (0.3 alpha around colour chips)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Every transition and keyframe."
+      },
+      {
+        "name": "press",
+        "value": "140-160ms; translateY(1px) scale(0.985-0.99)",
+        "purpose": "Button and sign press feedback."
+      },
+      {
+        "name": "dauber-land",
+        "value": "520ms; scale 1.9 -> 0.88 -> 1, opacity 0 -> 1",
+        "purpose": "Signature: the dauber landing when a square is completed; the face presses to 0.95."
+      },
+      {
+        "name": "bingo-arrive",
+        "value": "700ms; translateY(-14px) scale(0.94) -> translateY(3px) scale(1.02) -> rest",
+        "purpose": "The ¡BINGO! call arriving at 9/9."
+      },
+      {
+        "name": "ring-turn",
+        "value": "18s linear infinite rotation",
+        "purpose": "Dashed magenta ring around the next square."
+      },
+      {
+        "name": "rise",
+        "value": "320ms; translateY(28px) fade in",
+        "purpose": "Editor and sheets entering."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animations and transitions collapse to 1ms",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "48rem"
+      },
+      {
+        "name": "lg",
+        "value": "64rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Primary step action on paper.",
+      "html": "<button class=\"ds-btn ds-btn-ink\">Listo, volver al cartón</button>",
+      "css": ":host{--ink:#2234a8;--ink-deep:#17247a;--ink-tint:#e8ebfa;--ink-soft-on-paper:#4a57b8;--paper:#fff;--black:#141414;--on-ink:#fff;--on-ink-soft:#c9d0f5;--dauber:#ff2e88;--call:#ffd21f;--call-bright:#ffe04d;--f-num:'Archivo Variable','Arial Narrow',sans-serif;--f-text:'Atkinson Hyperlegible Next',system-ui,sans-serif;--r:10px;--ease-out:cubic-bezier(0.16,1,0.3,1);--shadow-card:0 16px 30px -12px rgb(6 12 48 / 0.6),0 3px 6px rgb(6 12 48 / 0.28);} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 20px;border:2px solid transparent;border-radius:var(--r);font:700 1.125rem/1.15 var(--f-text);cursor:pointer;transition:transform 140ms var(--ease-out),background-color 140ms;} .ds-btn:active{transform:translateY(1px) scale(0.985);} .ds-btn:focus-visible{outline:3px solid var(--black);outline-offset:2px;} .ds-btn-ink{background:var(--ink);color:var(--on-ink);} .ds-btn-ink:hover{background:var(--ink-deep);}"
+    },
+    {
+      "name": "Call Button",
+      "kind": "button",
+      "refersTo": "button-call",
+      "description": "Marigold action on the sharing path only; full-width big variant.",
+      "html": "<button class=\"ds-btn ds-btn-call\"><svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 4v11M8 11l4 4 4-4\"/><path d=\"M5 19h14\"/></svg> Guardar en el móvil</button>",
+      "css": ":host{--ink:#2234a8;--ink-deep:#17247a;--ink-tint:#e8ebfa;--ink-soft-on-paper:#4a57b8;--paper:#fff;--black:#141414;--on-ink:#fff;--on-ink-soft:#c9d0f5;--dauber:#ff2e88;--call:#ffd21f;--call-bright:#ffe04d;--f-num:'Archivo Variable','Arial Narrow',sans-serif;--f-text:'Atkinson Hyperlegible Next',system-ui,sans-serif;--r:10px;--ease-out:cubic-bezier(0.16,1,0.3,1);--shadow-card:0 16px 30px -12px rgb(6 12 48 / 0.6),0 3px 6px rgb(6 12 48 / 0.28);} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 20px;border:2px solid transparent;border-radius:var(--r);font:700 1.125rem/1.15 var(--f-text);cursor:pointer;transition:transform 140ms var(--ease-out),background-color 140ms;} .ds-btn:active{transform:translateY(1px) scale(0.985);} .ds-btn:focus-visible{outline:3px solid var(--black);outline-offset:2px;} .ds-btn-call{width:100%;min-height:60px;font-size:1.25rem;background:var(--call);color:var(--black);} .ds-btn-call:hover{background:var(--call-bright);}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action: paper with a cobalt border.",
+      "html": "<button class=\"ds-btn ds-btn-line\">Buscar</button>",
+      "css": ":host{--ink:#2234a8;--ink-deep:#17247a;--ink-tint:#e8ebfa;--ink-soft-on-paper:#4a57b8;--paper:#fff;--black:#141414;--on-ink:#fff;--on-ink-soft:#c9d0f5;--dauber:#ff2e88;--call:#ffd21f;--call-bright:#ffe04d;--f-num:'Archivo Variable','Arial Narrow',sans-serif;--f-text:'Atkinson Hyperlegible Next',system-ui,sans-serif;--r:10px;--ease-out:cubic-bezier(0.16,1,0.3,1);--shadow-card:0 16px 30px -12px rgb(6 12 48 / 0.6),0 3px 6px rgb(6 12 48 / 0.28);} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 20px;border:2px solid transparent;border-radius:var(--r);font:700 1.125rem/1.15 var(--f-text);cursor:pointer;transition:transform 140ms var(--ease-out),background-color 140ms;} .ds-btn:active{transform:translateY(1px) scale(0.985);} .ds-btn:focus-visible{outline:3px solid var(--black);outline-offset:2px;} .ds-btn-line{background:var(--paper);color:var(--ink);border-color:var(--ink);} .ds-btn-line:hover{background:var(--ink-tint);}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Image search input in the square editor.",
+      "html": "<input class=\"ds-input\" placeholder=\"Por ejemplo: jardinería\">",
+      "css": ":host{--ink:#2234a8;--ink-deep:#17247a;--ink-tint:#e8ebfa;--ink-soft-on-paper:#4a57b8;--paper:#fff;--black:#141414;--on-ink:#fff;--on-ink-soft:#c9d0f5;--dauber:#ff2e88;--call:#ffd21f;--call-bright:#ffe04d;--f-num:'Archivo Variable','Arial Narrow',sans-serif;--f-text:'Atkinson Hyperlegible Next',system-ui,sans-serif;--r:10px;--ease-out:cubic-bezier(0.16,1,0.3,1);--shadow-card:0 16px 30px -12px rgb(6 12 48 / 0.6),0 3px 6px rgb(6 12 48 / 0.28);} .ds-input{min-height:56px;width:100%;padding:0 14px;border:2px solid var(--ink);border-radius:var(--r);background:var(--paper);color:var(--black);font:400 1.125rem var(--f-text);caret-color:var(--dauber);appearance:none;} .ds-input::placeholder{color:var(--ink-soft-on-paper);opacity:1;} .ds-input:focus-visible{outline:3px solid var(--black);outline-offset:1px;}"
+    },
+    {
+      "name": "Card Blank",
+      "kind": "input",
+      "refersTo": "input-blank",
+      "description": "The printed «CARTÓN DE ____» name line in the card head.",
+      "html": "<div class=\"ds-head\"><label for=\"ds-n\">Cartón de</label><input id=\"ds-n\" class=\"ds-blank\" placeholder=\"tu nombre\"></div>",
+      "css": ":host{--ink:#2234a8;--ink-deep:#17247a;--ink-tint:#e8ebfa;--ink-soft-on-paper:#4a57b8;--paper:#fff;--black:#141414;--on-ink:#fff;--on-ink-soft:#c9d0f5;--dauber:#ff2e88;--call:#ffd21f;--call-bright:#ffe04d;--f-num:'Archivo Variable','Arial Narrow',sans-serif;--f-text:'Atkinson Hyperlegible Next',system-ui,sans-serif;--r:10px;--ease-out:cubic-bezier(0.16,1,0.3,1);--shadow-card:0 16px 30px -12px rgb(6 12 48 / 0.6),0 3px 6px rgb(6 12 48 / 0.28);} .ds-head{display:flex;align-items:baseline;gap:10px;padding:12px;background:var(--paper);color:var(--ink);} .ds-head label{font:900 1.375rem/1 var(--f-num);font-stretch:62%;text-transform:uppercase;letter-spacing:0.02em;} .ds-blank{flex:1;min-width:0;padding:4px 2px 6px;border:0;border-bottom:2px solid var(--ink);border-radius:0;background:transparent;color:var(--ink);font:700 1.3125rem var(--f-text);caret-color:var(--dauber);} .ds-blank::placeholder{color:var(--ink-soft-on-paper);font-weight:400;opacity:1;} .ds-blank:focus-visible{outline:none;border-bottom:3px solid var(--black);margin-bottom:-1px;}"
+    },
+    {
+      "name": "Idea Chip",
+      "kind": "chip",
+      "refersTo": "idea-chip",
+      "description": "Suggested search term pill.",
+      "html": "<button class=\"ds-idea\">novela negra</button>",
+      "css": ":host{--ink:#2234a8;--ink-deep:#17247a;--ink-tint:#e8ebfa;--ink-soft-on-paper:#4a57b8;--paper:#fff;--black:#141414;--on-ink:#fff;--on-ink-soft:#c9d0f5;--dauber:#ff2e88;--call:#ffd21f;--call-bright:#ffe04d;--f-num:'Archivo Variable','Arial Narrow',sans-serif;--f-text:'Atkinson Hyperlegible Next',system-ui,sans-serif;--r:10px;--ease-out:cubic-bezier(0.16,1,0.3,1);--shadow-card:0 16px 30px -12px rgb(6 12 48 / 0.6),0 3px 6px rgb(6 12 48 / 0.28);} .ds-idea{min-height:44px;padding:0 16px;border:2px solid var(--ink);border-radius:999px;background:var(--paper);color:var(--ink);font:700 1rem var(--f-text);cursor:pointer;} .ds-idea:hover{background:var(--ink-tint);} .ds-idea:active{background:var(--ink);color:var(--on-ink);} .ds-idea:focus-visible{outline:3px solid var(--black);outline-offset:2px;}"
+    },
+    {
+      "name": "Next-Step Sign",
+      "kind": "nav",
+      "refersTo": "next-sign",
+      "description": "Wayfinding sign on the cobalt band naming the next empty square.",
+      "html": "<div class=\"ds-band\"><button class=\"ds-sign\"><span class=\"ds-sign-num\">5</span><span class=\"ds-sign-text\">Ahora:</span><span class=\"ds-sign-name\">Pequeño lujo diario</span><span class=\"ds-sign-arrow\"><svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></button></div>",
+      "css": ":host{--ink:#2234a8;--ink-deep:#17247a;--ink-tint:#e8ebfa;--ink-soft-on-paper:#4a57b8;--paper:#fff;--black:#141414;--on-ink:#fff;--on-ink-soft:#c9d0f5;--dauber:#ff2e88;--call:#ffd21f;--call-bright:#ffe04d;--f-num:'Archivo Variable','Arial Narrow',sans-serif;--f-text:'Atkinson Hyperlegible Next',system-ui,sans-serif;--r:10px;--ease-out:cubic-bezier(0.16,1,0.3,1);--shadow-card:0 16px 30px -12px rgb(6 12 48 / 0.6),0 3px 6px rgb(6 12 48 / 0.28);} .ds-band{padding:18px 16px;background:var(--ink);} .ds-sign{display:grid;grid-template-columns:auto 1fr auto;grid-template-areas:\"num text arrow\" \"num name arrow\";align-items:center;column-gap:14px;width:100%;min-height:72px;padding:10px 16px 10px 14px;border:0;border-radius:var(--r);background:var(--paper);color:var(--ink);text-align:left;font-family:var(--f-text);box-shadow:var(--shadow-card);cursor:pointer;transition:transform 160ms var(--ease-out);} .ds-sign:hover{transform:translateY(-2px);} .ds-sign:active{transform:translateY(1px) scale(0.99);} .ds-sign:focus-visible{outline:3px solid var(--call);outline-offset:2px;} .ds-sign-num{grid-area:num;display:grid;place-items:center;width:52px;height:52px;border:3px dashed var(--dauber);border-radius:50%;font:900 2.25rem/1 var(--f-num);font-stretch:62%;} .ds-sign-text{grid-area:text;align-self:end;font-size:0.9375rem;font-weight:700;color:var(--ink-soft-on-paper);} .ds-sign-name{grid-area:name;align-self:start;font-size:1.25rem;font-weight:700;line-height:1.2;} .ds-sign-arrow{grid-area:arrow;display:flex;}"
+    },
+    {
+      "name": "¡BINGO! Call",
+      "kind": "button",
+      "refersTo": "bingo-call",
+      "description": "Replaces the next-step sign when the card is 9/9.",
+      "html": "<div class=\"ds-band\"><button class=\"ds-bingo\"><span class=\"ds-bingo-word\">¡Bingo!</span><span class=\"ds-bingo-sub\">Crear mi imagen</span></button></div>",
+      "css": ":host{--ink:#2234a8;--ink-deep:#17247a;--ink-tint:#e8ebfa;--ink-soft-on-paper:#4a57b8;--paper:#fff;--black:#141414;--on-ink:#fff;--on-ink-soft:#c9d0f5;--dauber:#ff2e88;--call:#ffd21f;--call-bright:#ffe04d;--f-num:'Archivo Variable','Arial Narrow',sans-serif;--f-text:'Atkinson Hyperlegible Next',system-ui,sans-serif;--r:10px;--ease-out:cubic-bezier(0.16,1,0.3,1);--shadow-card:0 16px 30px -12px rgb(6 12 48 / 0.6),0 3px 6px rgb(6 12 48 / 0.28);} .ds-band{padding:18px 16px;background:var(--ink);} .ds-bingo{display:flex;align-items:baseline;justify-content:center;flex-wrap:wrap;column-gap:14px;width:100%;min-height:76px;padding:12px 18px;border:0;border-radius:var(--r);background:var(--call);color:var(--black);box-shadow:var(--shadow-card);cursor:pointer;transition:transform 160ms var(--ease-out),background-color 160ms;} .ds-bingo:hover{background:var(--call-bright);} .ds-bingo:active{transform:translateY(1px) scale(0.99);} .ds-bingo:focus-visible{outline:3px solid var(--call);outline-offset:2px;} .ds-bingo-word{font:900 2.75rem/0.95 var(--f-num);font-stretch:62%;text-transform:uppercase;} .ds-bingo-sub{font:700 1.25rem var(--f-text);}"
+    },
+    {
+      "name": "Bingo Square",
+      "kind": "card",
+      "refersTo": "cell",
+      "description": "One ruled square. Filled: a 2x2 of equal squares with the dauber over the printed number (the NO square adds the black stamp). Next: numeral inside the turning dashed magenta ring.",
+      "html": "<div class=\"ds-grid\"><button class=\"ds-cell\"><span class=\"ds-face\"><span class=\"ds-num\">8</span><span class=\"ds-dot\"></span><span class=\"ds-q\"></span><span class=\"ds-q\"></span><span class=\"ds-q ds-free\"></span><span class=\"ds-stamp\">NO</span></span><span class=\"ds-label\">Lo que NO regalarme</span></button><button class=\"ds-cell\"><span class=\"ds-face ds-empty\"><span class=\"ds-big\">9</span><span class=\"ds-ring\"></span></span><span class=\"ds-label\">Color favorito</span></button></div>",
+      "css": ":host{--ink:#2234a8;--ink-deep:#17247a;--ink-tint:#e8ebfa;--ink-soft-on-paper:#4a57b8;--paper:#fff;--black:#141414;--on-ink:#fff;--on-ink-soft:#c9d0f5;--dauber:#ff2e88;--call:#ffd21f;--call-bright:#ffe04d;--f-num:'Archivo Variable','Arial Narrow',sans-serif;--f-text:'Atkinson Hyperlegible Next',system-ui,sans-serif;--r:10px;--ease-out:cubic-bezier(0.16,1,0.3,1);--shadow-card:0 16px 30px -12px rgb(6 12 48 / 0.6),0 3px 6px rgb(6 12 48 / 0.28);} .ds-grid{display:grid;grid-template-columns:repeat(2,160px);gap:2px;background:var(--ink);border:3px solid var(--ink);width:max-content;} .ds-cell{display:flex;flex-direction:column;padding:6px 6px 4px;border:0;background:var(--paper);color:var(--ink);cursor:pointer;} .ds-cell:focus-visible{outline:3px solid var(--black);outline-offset:-5px;} .ds-face{position:relative;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;aspect-ratio:1;overflow:hidden;border-radius:3px;container-type:inline-size;transition:transform 160ms var(--ease-out);} .ds-cell:hover .ds-face{box-shadow:inset 0 0 0 2px var(--ink);} .ds-cell:active .ds-face{transform:scale(0.97);} .ds-num{grid-area:1/1;display:grid;place-items:center;font:900 20cqi/1 var(--f-num);font-stretch:62%;} .ds-dot{grid-area:1/1;margin:8%;border-radius:52% 48% 50% 50% / 48% 52% 49% 51%;background:radial-gradient(circle at 40% 36%,rgb(255 46 136 / 0.78),rgb(255 46 136 / 0.92) 72%,rgb(255 46 136 / 0.98));mix-blend-mode:multiply;} .ds-q{border-radius:2px;background:linear-gradient(135deg,#8cc6e8,#2bb3a3);box-shadow:inset 0 0 0 1px rgb(34 52 168 / 0.18);} .ds-free{background:none;box-shadow:none;border:1.5px dashed rgb(34 52 168 / 0.45);} .ds-stamp{position:absolute;top:62%;left:62%;padding:0.04em 0.16em 0;border:0.06em solid rgb(20 20 20 / 0.85);border-radius:0.12em;color:rgb(20 20 20 / 0.85);font:900 16cqi/1 var(--f-num);font-stretch:62%;mix-blend-mode:multiply;transform:translate(-50%,-50%) rotate(-14deg);} .ds-empty{grid-template-columns:1fr;grid-template-rows:1fr;place-items:center;} .ds-big{font:900 4.5rem/1 var(--f-num);font-stretch:62%;} .ds-ring{position:absolute;inset:13%;border:3px dashed var(--dauber);border-radius:50%;animation:ds-turn 18s linear infinite;} @keyframes ds-turn{to{transform:rotate(1turn);}} .ds-label{display:grid;place-items:center;min-height:2.4em;padding:4px 0 2px;font:700 1rem/1.15 var(--f-text);text-align:center;text-wrap:balance;}"
+    },
+    {
+      "name": "Toast",
+      "kind": "custom",
+      "refersTo": "toast",
+      "description": "Black notice at the bottom confirming a save or an error.",
+      "html": "<div class=\"ds-toast\">Guardado en este móvil</div>",
+      "css": ":host{--ink:#2234a8;--ink-deep:#17247a;--ink-tint:#e8ebfa;--ink-soft-on-paper:#4a57b8;--paper:#fff;--black:#141414;--on-ink:#fff;--on-ink-soft:#c9d0f5;--dauber:#ff2e88;--call:#ffd21f;--call-bright:#ffe04d;--f-num:'Archivo Variable','Arial Narrow',sans-serif;--f-text:'Atkinson Hyperlegible Next',system-ui,sans-serif;--r:10px;--ease-out:cubic-bezier(0.16,1,0.3,1);--shadow-card:0 16px 30px -12px rgb(6 12 48 / 0.6),0 3px 6px rgb(6 12 48 / 0.28);} .ds-toast{display:inline-block;padding:14px 18px;border-radius:var(--r);background:var(--black);color:var(--paper);font:700 1.0625rem/1.3 var(--f-text);box-shadow:0 10px 24px -8px rgb(0 0 0 / 0.5);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Nochebuena Bingo Card",
+    "overview": "The whole product is one printed bingo card on a cobalt table. The shell is solid cobalt ink; the card is white paper printed in that same ink plus black, with a perforated top edge as if torn from the pad. Nine ruled squares carry huge extra-condensed numerals; finishing a square lands a fluorescent magenta dauber dot over its number, and when the card is full a marigold «¡BINGO!» call takes the top of the screen. Everything a person reads in sentences is set in Atkinson Hyperlegible Next, large and bold, because the people filling the card include older relatives on phones with big system text.\n\nDensity is low and the hierarchy is blunt: one cobalt band (title, year, «4 de 9» count), one next-step sign («Ahora: 5 · Pequeño lujo diario»), one card. Editing a square takes the full screen and does one job. The same world is redrawn on canvas for the shared image (1080 × 1560): cobalt ground, «EL CARTÓN DE» plus the name in condensed capitals, the white perforated card with a double outer rule, and a footer line «Amigo invisible · Navidad 2026». That image is the product's deliverable and belongs to this system.\n\nThe world deliberately refuses the seasonal default of white rounded cards, Christmas red, and snowflakes. Christmas lives in the ritual (Nochebuena bingo), not in ornament.",
+    "keyCharacteristics": [
+      "Two inks on paper: cobalt and black on pure white; no neutral greys.",
+      "Extra-condensed 900-weight Archivo numerals and headings at width 62; Atkinson Hyperlegible Next for every sentence.",
+      "Fluorescent magenta dauber multiplies over the printed number to mark a done square.",
+      "Marigold is the call to action and nothing else.",
+      "Every photo is cropped square at one scale; «Lo que NO regalarme» photos are cancelled by a black rubber «NO» stamp, never hidden."
+    ],
+    "rules": [
+      {
+        "name": "The Two Inks Rule",
+        "body": "Paper carries cobalt and black only. Lighter values are cobalt thinned (`ink-tint`, `ink-soft-on-paper`, cobalt at 18 to 45% alpha for hairlines), never a grey.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Dauber Rule",
+        "body": "Magenta means \"marked\" or \"next to mark\". It never fills a button, a heading, or a background.",
+        "section": "colors"
+      },
+      {
+        "name": "The Marigold Is a Call Rule",
+        "body": "Marigold appears only on the action that moves the person to sharing. One marigold element per screen.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numbers Are Printed Rule",
+        "body": "Archivo appears only as printed card matter: numbers, the title, headings, «CARTÓN DE», «¡BINGO!», the «NO» stamp. A sentence is never set in Archivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Big Text Rule",
+        "body": "Body is 1.125rem and controls are bold. Never shrink sentences to fit; let labels wrap (`text-wrap: balance`, hyphenation on).",
+        "section": "typography"
+      },
+      {
+        "name": "The Table and Paper Rule",
+        "body": "Shadows exist only between the cobalt table and something lying on it. Nothing on the paper is lifted.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** print every card element in cobalt (`ink`) or black on white paper; lighten only by thinning cobalt.",
+      "**Do** set numbers, headings and the «NO» stamp in Archivo 900 at `font-stretch: 62%`, uppercase; set every sentence in Atkinson Hyperlegible Next at 1.125rem or larger.",
+      "**Do** mark completion with the magenta dauber in `multiply` over the printed number.",
+      "**Do** crop every photo square at one scale, and cancel «Lo que NO regalarme» photos with the black rotated stamp.",
+      "**Do** keep touch targets at least 44px (buttons 52px, fields 56px) and focus rings 3px black (marigold on cobalt).",
+      "**Do** redraw any new shared output in the same world as the card: cobalt ground, perforated paper, condensed caps."
+    ],
+    "donts": [
+      "**Don't** introduce neutral greys, Christmas red, snowflakes or other seasonal ornament.",
+      "**Don't** use marigold for anything but the call to share, or magenta for anything but marking.",
+      "**Don't** lift anything that lies on the paper with a shadow; shadows belong to objects on the cobalt table.",
+      "**Don't** set sentences in the condensed face or below 1rem (credits at 0.875rem are the floor).",
+      "**Don't** hide a «NO» photo or blur it; the stamp cancels it in view."
+    ]
+  }
+}

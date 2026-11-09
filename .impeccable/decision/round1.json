@@ -1,0 +1,124 @@
+{
+  "title": "Elige el mundo visual del tablón",
+  "question": "Ha salido «El cartón de bingo de Nochebuena». Quédatelo, elige una alternativa o vuelve a tirar.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "El cartón de bingo de Nochebuena",
+      "kicker": "THE ROLL",
+      "lineage": "Cartones de bingo de papel con los que juegan las familias en Nochebuena, con garbanzos o rotulador",
+      "thesis": "Tu tablón es un cartón de bingo: nueve casillas numeradas que vas marcando hasta cantar ¡BINGO! y compartirlo.",
+      "palette": ["#2234a8", "#ffffff", "#141414", "#ff2e88", "#ffd21f"],
+      "materials": ["papel de cartón de bingo impreso a una tinta", "marcador fosforito translúcido", "número gordo condensado en cada casilla"],
+      "viewport": "Barra con tu nombre y el contador 4/9; debajo, el cartón 3×3 ocupando el ancho: cada casilla con su número enorme impreso en tinta azul y su nombre; las llenas muestran sus fotos con un círculo de rotulador fosforito encima del número.",
+      "risk": "Si el bingo se queda en decoración (bolas, bombo, confeti) parece una feria; el cartón tiene que ser el propio tablón, sobrio y legible.",
+      "raised": [
+        {"from": "challenger-airport", "raise": "La siguiente casilla vacía está siempre señalada: un aviso arriba dice qué toca ahora y lleva a ella."},
+        {"from": "challenger-feed", "raise": "Al tocar una casilla, el buscador ocupa toda la pantalla y hace una sola cosa: elegir hasta tres fotos."},
+        {"from": "challenger-ikeda", "raise": "Disciplina de imprenta a dos tintas: azul cartón y negro sobre blanco, sin grises; el fosforito solo marca casillas hechas."},
+        {"from": "challenger-wallet", "raise": "«Lo que NO regalarme» no se borra ni se esconde: sus fotos llevan un sello de anulado, como un cupón cancelado."},
+        {"from": "challenger-folio", "raise": "Todas las fotos se recortan a la misma escala y encuadre cuadrado, para que el cartón se lea como una lámina."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "El álbum de cromos",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Álbumes de cromos de quiosco: huecos numerados con su silueta, cromos con borde blanco",
+      "thesis": "Una página de álbum con nueve huecos numerados; cada foto es un cromo que pegas hasta completar la página.",
+      "palette": ["#0c5fb4", "#ffd400", "#e5332a", "#ffffff", "#101820"],
+      "materials": ["página de álbum satinada", "huecos con silueta impresa", "cromos con borde blanco y brillo"],
+      "viewport": "Cabecera de página de álbum con tu nombre y «9 cromos»; el 3×3 como huecos con silueta y número, los pegados como cromos levemente torcidos.",
+      "risk": "Es la idea a la que llegaría casi cualquiera con un 3×3 que se completa: muy reconocible, poco sorprendente."
+    },
+    {
+      "id": "challenger-airport",
+      "label": "Señalética amarilla de aeropuerto",
+      "verdict": "competitive",
+      "lineage": "Paneles amarillos colgados de los aeropuertos, pictogramas blancos sobre negro",
+      "thesis": "Cada casilla es un panel que te dice exactamente qué hacer a continuación.",
+      "palette": ["#ffc900", "#111111", "#ffffff"],
+      "materials": ["panel amarillo esmaltado", "pictogramas blancos en cuadro negro", "números monumentales"],
+      "viewport": "Banda amarilla fija arriba con «Siguiente: Género de música →»; el 3×3 como paneles con número monumental.",
+      "case": "Gana en claridad para quien nunca usa apps, pero la familia no se reconoce en un aeropuerto en Navidad.",
+      "risk": "Frío y funcional: parece un trámite, no un juego familiar."
+    },
+    {
+      "id": "challenger-feed",
+      "label": "Feed vertical a pantalla completa",
+      "verdict": "declined",
+      "lineage": "Vídeos verticales donde un elemento ocupa toda la pantalla",
+      "thesis": "Una casilla por pantalla, deslizando a la siguiente.",
+      "palette": ["#000000", "#ffffff"],
+      "materials": ["foto a sangre", "iconos blancos apilados"],
+      "viewport": "Una casilla a pantalla completa con su nombre abajo.",
+      "case": "Rompe el tablón 3×3, que es lo que hay que ver de un vistazo; los mayores no lo reconocen.",
+      "kept": "El buscador de cada casilla ocupa toda la pantalla y hace una sola cosa.",
+      "risk": "Se pierde la vista de conjunto."
+    },
+    {
+      "id": "challenger-wallet",
+      "label": "Billetera de billetes de avión",
+      "verdict": "declined",
+      "lineage": "Cupones de billete de los 60 con sellos de validado y anulado",
+      "thesis": "Cada casilla es un cupón que se sella.",
+      "palette": ["#16306b", "#d22630", "#ffffff", "#5b3a8c"],
+      "materials": ["papel de cupón", "tinta de calco morada", "sello rojo de anulado"],
+      "viewport": "Cupones apilados en una columna.",
+      "case": "Bonito pero ajeno: no tiene nada que ver con regalos ni con la familia.",
+      "kept": "Nada desaparece, se anula: el sello para «Lo que NO regalarme».",
+      "risk": "Disfraz de otro mundo."
+    },
+    {
+      "id": "challenger-folio",
+      "label": "Láminas botánicas",
+      "verdict": "declined",
+      "lineage": "Folios botánicos con láminas a la misma escala",
+      "thesis": "Nueve láminas a idéntica escala.",
+      "palette": ["#f1ead8", "#3d5a2a", "#b3261e"],
+      "materials": ["lámina grabada", "filete sepia"],
+      "viewport": "Láminas con nombre en cursiva.",
+      "case": "Demasiado delicado y culto para un juego familiar.",
+      "kept": "Todas las fotos al mismo encuadre y escala.",
+      "risk": "Crema y serif: lo que sale por defecto."
+    },
+    {
+      "id": "challenger-ikeda",
+      "label": "Campo de datos en blanco y negro",
+      "verdict": "declined",
+      "lineage": "Instalaciones de barras y datos en blanco y negro puros",
+      "thesis": "El tablón como campo de datos de alto contraste.",
+      "palette": ["#000000", "#ffffff"],
+      "materials": ["barras finas", "números monoespaciados"],
+      "viewport": "Rejilla de barras con números.",
+      "case": "Frío e ilegible para la familia.",
+      "kept": "Compromiso total con dos tintas, sin grises.",
+      "risk": "Inaccesible."
+    },
+    {
+      "id": "challenger-timetable",
+      "label": "Horario de bolsillo en cristal",
+      "verdict": "declined",
+      "lineage": "Horarios de aerolínea a un solo cuerpo de letra",
+      "thesis": "Un solo tamaño de letra; el rango lo dan peso y contraste.",
+      "palette": ["#e2a72e", "#1c1c1c", "#f3efe2", "#d6452b", "#2f6b3a"],
+      "materials": ["cristal tintado", "mesa de luz"],
+      "viewport": "Tiras inclinadas.",
+      "case": "La inclinación y el cuerpo único dificultan la lectura a los mayores.",
+      "kept": "Jerarquía por peso y negativo, no por más tamaños.",
+      "risk": "Ilegible en móvil."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "Lo estándar",
+    "thesis": "Una app navideña limpia: fondo blanco, tarjetas redondeadas y un rojo de acento.",
+    "palette": ["#ffffff", "#1f2937", "#c62828", "#2e7d32"],
+    "materials": ["rejilla limpia", "tarjetas con sombra suave"],
+    "viewport": "Título, contador y 3×3 de tarjetas con icono y texto.",
+    "risk": "Igual que cualquier otra plantilla de amigo invisible."
+  },
+  "steer": true
+}
