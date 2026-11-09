@@ -13,7 +13,13 @@ export function load() {
     if (!saved) return base;
     base.name = typeof saved.name === 'string' ? saved.name : '';
     for (const c of CELLS) {
-      if (Array.isArray(saved.cells?.[c.id])) base.cells[c.id] = saved.cells[c.id].slice(0, 3);
+      if (!Array.isArray(saved.cells?.[c.id])) continue;
+      const ok = (it) =>
+        it &&
+        (c.kind === 'color'
+          ? /^#[0-9a-f]{6}$/i.test(it.hex) && typeof it.name === 'string'
+          : typeof it.text === 'string' || (typeof it.src === 'string' && it.src.startsWith('data:image/')));
+      base.cells[c.id] = saved.cells[c.id].filter(ok).slice(0, 3);
     }
   } catch {
     // Sin almacenamiento disponible: se empieza en blanco.

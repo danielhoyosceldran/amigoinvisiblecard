@@ -98,7 +98,7 @@ function faceHTML(cell, i) {
     if (!it) quads.push('<span class="q q-free"></span>');
     else if (cell.kind === 'color') quads.push(`<span class="q" style="background:${esc(it.hex)}"></span>`);
     else if (it.text) quads.push(`<span class="q q-text" data-len="${textSize(it.text)}"><span>${esc(it.text)}</span></span>`);
-    else quads.push(`<span class="q"><img src="${it.src}" alt="" /></span>`);
+    else quads.push(`<span class="q"><img src="${it.src}" alt="" width="480" height="480" decoding="async" /></span>`);
   }
   return `<span class="quads" aria-hidden="true">
     <span class="q q-num"><span class="num">${i + 1}</span><span class="dot"></span></span>
@@ -446,7 +446,7 @@ function renderResults() {
         const busy = ed.busy.has(k);
         return `<li><button type="button" class="hit ${on ? 'is-on' : ''} ${busy ? 'is-busy' : ''}" data-hit="${k}"
           aria-pressed="${on}" aria-label="${esc(hit.title || `Foto ${k + 1}`)}${on ? ', elegida' : ''}">
-          <img src="${esc(hit.thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer" />
+          <img src="${esc(hit.thumb)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
           <span class="hit-mark">${icon('check')}</span>
         </button></li>`;
       })
@@ -588,7 +588,7 @@ async function toggleHit(k) {
   try {
     const src = await importFromWeb(hit);
     const target = state.cells[cellId];
-    if (target.length < MAX_PER_CELL) {
+    if (target.length < MAX_PER_CELL && !target.some((it) => it.ref === hit.src)) {
       target.push({ src, ref: hit.src });
       persist();
     }
@@ -643,8 +643,12 @@ function renderSwatches() {
 function toggleColor(sw, custom = false) {
   const list = state.cells[ed.cell.id];
   const at = list.findIndex((c) => c.hex.toLowerCase() === sw.hex.toLowerCase());
-  if (at >= 0 && !custom) list.splice(at, 1);
-  else if (at < 0) {
+  if (at >= 0 && custom) {
+    toast('Ese color ya está en tu casilla.');
+    return;
+  }
+  if (at >= 0) list.splice(at, 1);
+  else {
     if (list.length >= MAX_PER_CELL) {
       toast('Ya tienes 3 colores. Quita uno para poner otro.');
       return;
@@ -771,10 +775,11 @@ confirmDlg.addEventListener('click', (e) => {
   if (!e.target.closest('#confirm-yes')) return;
   state = reset();
   nameInput.value = '';
+  // El aviso se muestra cuando el diálogo ya se ha cerrado; si no, quedaría oculto dentro de él.
+  confirmDlg.addEventListener('closed', () => toast('Cartón en blanco. Puedes empezar de nuevo.'), { once: true });
   requestClose();
   renderBoard();
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  toast('Cartón en blanco. Puedes empezar de nuevo.');
 });
 
 renderBoard();

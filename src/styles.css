@@ -398,6 +398,17 @@ img {
   }
 }
 
+/* El cartón lleva máscara + drop-shadow: cada fotograma de la rueda lo repintaría entero.
+   En táctil la rueda se queda quieta y la sombra es una sola. */
+@media (pointer: coarse) {
+  .is-next .cell-face::after {
+    animation: none;
+  }
+  .carton {
+    filter: drop-shadow(0 10px 14px rgb(6 12 48 / 0.4));
+  }
+}
+
 .cell-label {
   display: grid;
   place-items: center;
